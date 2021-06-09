@@ -7,7 +7,7 @@
  <body>
      <header class="header">
        <nav>
-         <a class="index-link">
+         <a class="index-logo">
            <img src="img/nerds-logo.svg" width="160" height="65">
          </a>
           <ul class="nav-list">
@@ -22,20 +22,20 @@
        </nav>
       </header>
       <section class="slider">
-       <div class="slide-list">
-         <div class="slide-title">
-           <p class="subtitle">Долго, дорого, скрупулезно.</p>
-           <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+       <div class="slide-item">
+         <div class="slide-block">
+           <p class="slide-title">Долго, дорого, скрупулезно.</p>
+           <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
            <a href="#" class="learn-more">Узнать больше</a>
         </div>
          <figure class="slide-img">
            <img src="img/nerds-index-slide1-1.png" width="760" height="431" alt="Дизайн для смартфонов">
          </figure>
         </div> 
-        <div class="slide-list">
-          <div ckass="slide-title">
-            <p class="subtitle">Любим математику как никто другой</p>
-            <p class="text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+        <div class="slide-item">
+          <div ckass="slide-block">
+            <p class="slide-title">Любим математику как никто другой</p>
+            <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
             <a href="#" class="learn-more">Узнать больше</a>
           </div>
           <figure class="slide-img">
@@ -43,10 +43,10 @@
           </figure>
         </div>
       </div> 
-      <div class="slide-list">
-        <div ckass="slide-title">
-          <p class="subtitle">Только ночь, только хардкор</p>
-          <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+      <div class="slide-item">
+        <div ckass="slide-block">
+          <p class="slide-title">Только ночь, только хардкор</p>
+          <p class="slide-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a href="#" class="learn-more">Узнать больше</a>
           <figure class="slide-img">
             <img src="img/nerds-index-slide3-1.png" width="760" height="431" alt="Адаптивная верстка">
@@ -56,39 +56,41 @@
       </section>
      <main class="content">
        <h1>Студия Веб дизайна "Нёрдс"</h1>
-       <h2>Услуги</h2>
-       <ul class="services">
-         <li class="service-item">
-            <figure class="servis-img">
-               <img src="img/illustration-1-1.jpg" width="300" height="146">
-            </figure> 
-            <div class="service-container"> 
-               <h3 class="service-title">Веб-сайты</h3>
-               <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+       <section>
+         <h2>Услуги</h2>
+         <ul class="services">
+           <li class="service-item">
+              <figure class="servis-img">
+                 <img src="img/illustration-1-1.jpg" width="300" height="146">
+              </figure> 
+              <div class="service-container"> 
+                 <h3 class="service-title">Веб-сайты</h3>
+                 <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                 <a href="#" class="service-link">Заказать</a>
+              </div>  
+           </li>
+           <li class="service-item">
+             <figure class="service-img">
+               <img src="img/illustration-2-1.svg" width="300" height="146">
+             </figure>
+             <div class="service-container"> 
+               <h3 class="service-title">приложения</h3>
+               <p class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
                <a href="#" class="service-link">Заказать</a>
-            </div>  
-         </li>
-         <li class="service-item">
-           <figure class="service-img">
-             <img src="img/illustration-2-1.svg" width="300" height="146">
-           </figure>
-           <div class="service-container"> 
-             <h3 class="service-title">приложения</h3>
-             <p class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-             <a href="#" class="service-link">Заказать</a>
-           </div>
-         </li>
-         <li class="service-item">
-           <figure class="service-item">
-             <img src="img/illustration-3-1.jpg" width="300" height="146">
-           </figure>
-           <div class="service-container"> 
-             <h3 class="service-title">Призентации</h3>
-             <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-             <a href="#" class="service-link">Заказать</a>
-           </div>  
-         </li>
-       </ul>
+             </div>
+           </li>
+           <li class="service-item">
+             <figure class="service-item">
+               <img src="img/illustration-3-1.jpg" width="300" height="146">
+             </figure>
+             <div class="service-container"> 
+               <h3 class="service-title">Призентации</h3>
+               <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+               <a href="#" class="service-link">Заказать</a>
+             </div>  
+           </li>
+         </ul>
+        </section>   
       <section class="info">
         <h2>О компании</h2>  
         <div class="info-container-left">
@@ -105,25 +107,25 @@
             <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>  
-      </section>
-      <div class="info-container-right">
-        <figure class="info-logo">
-          <img src="img/nerds-illustration-1.png" widh="360" height="208">
-        </figure>  
-        <p class="info-subtitle-right">с 2004 года Любим точность во всем:</p>
-        <table class="info-table">
-          <tr class="info-row">
-            <th class="info-col">146%</th>
-            <th class="info-col">100%</th>
-            <th class="info-col">50%</th>
-          </tr>
-          <tr class="info-row">
-            <td class="info-col">Уровень самоотдачи</td>
-            <td class="info-col">Соблюдение сроков</td> 
-            <td class="info-col">Минимальная предоплата</td>
-          </tr>
-        </table>
-      </div>
+        <div class="info-container-right">
+          <figure class="info-logo">
+            <img src="img/nerds-illustration-1.png" widh="360" height="208">
+          </figure>  
+          <p class="info-subtitle-right">с 2004 года Любим точность во всем:</p>
+          <table class="info-table">
+            <tr class="info-row">
+              <th class="info-col">146%</th>
+              <th class="info-col">100%</th>
+              <th class="info-col">50%</th>
+            </tr>
+            <tr class="info-row">
+              <td class="info-col">Уровень самоотдачи</td>
+              <td class="info-col">Соблюдение сроков</td> 
+              <td class="info-col">Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>  
       <section class="clients">
         <h2>Клиенты</h2>
         <ul class="clients-list">
@@ -156,14 +158,10 @@
         <figure class="contact-img">
           <img src="img/map-1.png" width="1440" height="416" alt="карта">
         </figure>
-        <p class="contact-title">NЁRDS DESIGN STUDIO</p>
+        <p class="contact-titel">NЁRDS DESIGN STUDIO</p>
         <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <p class="contact-tel">
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
-        </p>
-        <p class="contact-button">
-          <button type="submit">Напишите нам</button>
-        </p> 
+        <a href="tel:+78005558628" class="contact-tel">+7 800 555-86-28</a>
+        <button type="submit" class="contact-button">Напишите нам</button>
       </div> 
       <section class="socials">
         <h2>Соц.сети</h2>
@@ -199,9 +197,7 @@
         <label for="textmail">Текст письма:</label>
         <input type="text" id="textmail" name="textmail" placeholder="В свободной форме">
       </form>
-      <p class="post-mail-button">
-        <button type="submit">Отправить</button>
-      </p>
+      <button type="submit" class="post-mail-button">Отправить</button>
     </section>
 
   </body>
