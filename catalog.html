@@ -35,53 +35,53 @@
                   <label for="price-reng-min">от</label>
                   <input type="number" id="price-reng-min" name="price-reng-min" min="0" max="15000">
                   <lable for="price-reng-max">до</lable>
-                  <input type="number" id="price-reng-max" name="price-reng-max" min="0" max="15000"> 
-                </form>
+                  <input type="number" id="price-reng-max" name="price-reng-max" min="0" max="15000">
+                </form>   
             </fieldset>
-              <fieldset class="selector-container">
-                <legend class="selector-title">Сетка:</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <input type="radio" value="filter-adaptive" name="grid" id="filter-adaptive" checked>
-                    <label for="filter-adaptive">Адаптивная</label>
-                  </li>
-                  <li class="filter-item">
-                    <input type="radio" value="filter-fixed" name="grid" id="filter-fixed">
-                    <label for="filter-fixed">Фиксированная</label>
-                  </li>
-                  <li class="filter-item">
-                    <input type="radio" value="filter-elastic" name="grid" id="filter-elastic">
-                    <label for="filter-elastic">Резиновая</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="selector-container">
-                <legend class="selector-title">Особенности:</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <input type="checkbox" name="filter-slaider" id="filter-slaider" checked>
-                    <label for="filter-slaider">Слайдер</label>
-                  </li>
-                  <li class="filter-item">
-                    <input type="checkbox" name="filter-advantages" id="filter-advantages">
-                    <label for="filter-advantages">Блок преимуществ</label>
-                  </li>
-                  <li class="filter-item">
-                    <input type="checkbox" name="filter-news" id="filter-news" checked>
-                    <label for="filter-news">Новости</label>
-                  </li>
-                  <li class="filter-item">
-                    <input type="checkbox" name="filter-photo" id="filter-photo">
-                    <label for="filter-photo">Галерея</label>
-                  </li>
-                  <li class="filter-item">
-                    <input type="checkbox" name="filter-cart" id="filter-cart">
-                    <label for="filter-cart">Корзина</label>
-                  </li> 
-                </ul>
-              </fieldset>
-              <button class="selector-button" type="submit">Показать</button>
-            </form>
+            <fieldset class="selector-container">
+              <legend class="selector-title">Сетка:</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <input type="radio" value="filter-adaptive" name="grid" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-item">
+                  <input type="radio" value="filter-fixed" name="grid" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-item">
+                  <input type="radio" value="filter-elastic" name="grid" id="filter-elastic">
+                  <label for="filter-elastic">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="selector-container">
+              <legend class="selector-title">Особенности:</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <input type="checkbox" name="filter-slaider" id="filter-slaider" checked>
+                  <label for="filter-slaider">Слайдер</label>
+                </li>
+                <li class="filter-item">
+                  <input type="checkbox" name="filter-advantages" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter-item">
+                  <input type="checkbox" name="filter-news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-item">
+                <input type="checkbox" name="filter-photo" id="filter-photo">
+                <label for="filter-photo">Галерея</label>
+                </li>
+                <li class="filter-item">
+                  <input type="checkbox" name="filter-cart" id="filter-cart">
+                  <label for="filter-cart">Корзина</label>
+                </li> 
+              </ul>
+            </fieldset>
+            <button class="selector-button" type="submit">Показать</button>
+          </form>
           </div>
         </section>
         <section class="catalog-container">
@@ -157,19 +157,21 @@
             </li>
           </ul>
         </section>
-        <div class="page">
-          <ul class="page-list">
-            <li class="page-item">
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item">
               <a>1</a>
             </li>
-            <li class="page-item">
+            <li class="pagination-item">
               <a href="#">2</a>
             </li>
-            <li class="page-item">
+            <li class="pagination-item">
               <a href="#">3</a>
             </li>
+            <li class="pagination-item">\
+              <a class="pagination-nest" href="#">Следующая</a>
+            </li>
           </ul>
-          <a class="page-nest" href="##">Следующая</a>
         </div>
       </main>
 
@@ -217,8 +219,8 @@
           <input type="email" id="useremail" name="useremail" placeholder="email@example.com ">
           <label for="textmail">Текст письма:</label>
           <input type="text" id="textmail" name="textmail" placeholder="В свободной форме">
+          <button type="submit" class="post-mail-button">Отправить</button>
         </form>
-        <button type="submit" class="post-mail-button">Отправить</button>
       </section>
   
     </body>
