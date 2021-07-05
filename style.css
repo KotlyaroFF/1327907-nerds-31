@@ -1,12 +1,20 @@
 :root {
   --basic-black: #283136;
   --basic-extra-black: #000000;
+  --footer-grey: #666666;
+  --footer-black: #444444;
   --basic-grey: #EEEEEE;
   --red-button: #FB565A;
   --red-button-hover: #E74246;
   --red-button-focus: #D7373B;
   --basic-dark-grey: #4D4D4D;
   --basic-white: #FFFFFF;
+  --button-green: #00CA74;
+  --button-green-hover: #00BC6C;
+  --button-green-focus: #00AA62;
+  --button-yellow: #EFC849;
+  --button-yellow-hover: #EAB534;
+  --button-yellow-focus: #E5A722;
 }
 
 body {
@@ -70,14 +78,13 @@ img {
   color: var(--basic-extra-black);
 }
 
-.slide-text {
-  color: var(--basic-black);
-}
-
 .learn-more {
   color: var(--basic-white);
   background-color: var(--red-button);
   text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  font: inherit;
 }
 
 .learn-more:hover {
@@ -87,4 +94,135 @@ img {
 .learn-more:focus {
   background-color: var(--red-button-focus);
   opacity: 0.3;
+}
+
+.service-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-extra-black);
+}
+
+.service-link {
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  font: inherit;
+  color: var(--basic-white);
+}
+
+.button-red {
+  background-color: var(--red-button);
+}
+
+.button-red:hover {
+  background-color: var(--red-button-hover);
+}
+
+.button-red:focus {
+  background-color: var(--red-button-focus);
+}
+
+.button-green {
+  background-color: var(--button-green);
+}
+
+.button-green:hover {
+  background-color: var(--button-green-hover);
+}
+
+.button-green:focus {
+  background-color: var(--button-green-focus);
+}
+
+.button-yellow {
+  background-color: var(--button-yellow);
+}
+
+.button-yellow:hover {
+  background-color: var(--button-yellow-hover);
+}
+
+.button-yellow:focus {
+  background-color: var(--button-yellow-focus);
+}
+
+.button-yellow:focus,
+.button-green:focus,
+.button-red:focus {
+  opacity: 0.3;
+  color: var(--basic-white);
+}
+
+.info-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: var(--basic-extra-black);
+}
+
+.info-subtitel-left {
+  color: var(--basic-black);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.info-subtitle-right {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.info-row {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.info-text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight:400;
+}
+
+.contact-titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-extra-black);
+  text-transform: uppercase;
+}
+
+address {
+  font: inherit;
+  color: var(--footer-black);
+}
+
+.contact-tel {
+  font: inherit;
+  color: var(--footer-grey);
+}
+
+.contact-button {
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  font: inherit;
+  color: var(--basic-white);
+  background-color: var(--red-button);
+}
+
+.socials-list {
+  list-style: none;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-extra-black);
+}
+
+.footer-subtitle {
+  color: var(--footer-black);
 }
