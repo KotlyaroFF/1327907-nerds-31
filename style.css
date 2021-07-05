@@ -3,7 +3,10 @@
   --basic-extra-black: #000000;
   --basic-grey: #EEEEEE;
   --red-button: #FB565A;
+  --red-button-hover: #E74246;
+  --red-button-focus: #D7373B;
   --basic-dark-grey: #4D4D4D;
+  --basic-white: #FFFFFF;
 }
 
 body {
@@ -37,6 +40,51 @@ img {
   list-style: none;
 }
 
-.site-navigation-current a:not([href]) {
+.nav-list-current a:not([href]) {
   background-color: var(--basic-grey);
+}
+
+.nav-list a,
+.account-list a {
+  color: var(--basic-extra-black);
+}
+
+.nav-list a:focus,
+.account-list a:focus {
+  opacity: 0.3;
+}
+
+.nav-list a:hover,
+.account-list a:hover {
+  color: var(--red-button);
+}
+
+.slider {
+  background-color: var(--basic-grey);
+}
+
+.slide-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  color: var(--basic-extra-black);
+}
+
+.slide-text {
+  color: var(--basic-black);
+}
+
+.learn-more {
+  color: var(--basic-white);
+  background-color: var(--red-button);
+  text-transform: uppercase;
+}
+
+.learn-more:hover {
+  background-color: var(--red-button-hover);
+}
+
+.learn-more:focus {
+  background-color: var(--red-button-focus);
+  opacity: 0.3;
 }
