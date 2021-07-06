@@ -246,9 +246,31 @@ address {
   color: var(--footer-black);
   border: 2px solid var(--border-white);
   background-color: transparent;
+  font: inherit;
+  line-height: 18px;
 }
 
 .feedback-text:hover {
   border-color: var(--border-grey);
 }
 
+.feedback-text:focus {
+  border-color: var(--basic-extra-black);
+}
+
+.feedback-text:invalid {
+  border-color: var(--red-button-hover);
+  color: var(--red-button-hover);
+}
+
+.post-mail-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--red-button);
+  border: none;
+}
