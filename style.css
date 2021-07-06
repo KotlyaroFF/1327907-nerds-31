@@ -15,6 +15,9 @@
   --button-yellow: #EFC849;
   --button-yellow-hover: #EAB534;
   --button-yellow-focus: #E5A722;
+  --border-white: #D7DCDE;
+  --border-grey: #B4B9BB;
+
 }
 
 body {
@@ -226,3 +229,26 @@ address {
 .footer-subtitle {
   color: var(--footer-black);
 }
+
+.feedback {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-extra-black);
+}
+
+.feedback-lable {
+  font-weight: 700;
+  color: var(--basic-extra-black);
+}
+
+.feedback-text {
+  color: var(--footer-black);
+  border: 2px solid var(--border-white);
+  background-color: transparent;
+}
+
+.feedback-text:hover {
+  border-color: var(--border-grey);
+}
+
