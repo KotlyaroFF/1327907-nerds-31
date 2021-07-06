@@ -26,9 +26,17 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+}
+.page {
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
+}
+
+.page-catalog {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--footer-grey)
 }
 
 a {
@@ -49,6 +57,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   list-style: none;
+  font-weight: 500;
 }
 
 .nav-list-current a:not([href]) {
@@ -77,7 +86,7 @@ img {
 .slide-title {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--basic-extra-black);
 }
 
@@ -101,7 +110,7 @@ img {
 
 .service-title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-extra-black);
@@ -113,6 +122,7 @@ img {
   text-align: center;
   font: inherit;
   color: var(--basic-white);
+  font-weight: 500;
 }
 
 .button-red {
@@ -161,7 +171,7 @@ img {
 .info-title {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--basic-extra-black);
 }
 
@@ -171,9 +181,15 @@ img {
   font-weight: 700;
 }
 
+.info-container-right {
+  text-align: right;
+}
+
 .info-subtitle-right {
   text-transform: uppercase;
   font-weight: 700;
+  caption-side: top;
+  text-align: center;
 }
 
 .info-row {
@@ -188,8 +204,12 @@ img {
   font-weight:400;
 }
 
+.clients-list {
+  list-style: none;
+}
+
 .contact-titel {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-extra-black);
@@ -213,9 +233,31 @@ address {
   font: inherit;
   color: var(--basic-white);
   background-color: var(--red-button);
+  font-weight: 500;
 }
 
 .socials-list {
+  list-style: none;
+}
+
+.catalog-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-extra-black);
+  background-color: var(--basic-grey);
+}
+
+.selector-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-extra-black);
+}
+/*--------------------------------------------------------------------------*/
+.filter-list,
+.range-list {
   list-style: none;
 }
 
@@ -228,6 +270,10 @@ address {
 
 .footer-subtitle {
   color: var(--footer-black);
+}
+
+.feedback-section {
+  box-shadow: 0px 20px 40px;
 }
 
 .feedback {

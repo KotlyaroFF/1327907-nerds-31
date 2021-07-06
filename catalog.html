@@ -4,16 +4,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
 
-  <body>
+  <body class="page-catalog">
     <header class="header">
       <nav>
         <a class="index-logo" href="index.html">
@@ -35,14 +34,14 @@
     </header>
 
   <main>
-    <h1>Магазин готовых шаблонов</h1>
+    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     <section class="main-container">
       <div class="price-container">
         <h2>Фильтр товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="selector-container">
             <legend class="selector-title">Стоимость:</legend>
-            <ul class="range=list">
+            <ul class="range-list">
               <li class="range-item">
                 <input type="range" id="price-reng" name="price-reng" min="0" max="15000">
                 <label for="price-reng-min">от</label>
