@@ -57,15 +57,15 @@
             <legend class="selector-title">Сетка:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <input type="radio" value="filter-adaptive" name="grid" id="filter-adaptive" checked>
+                <input class="filter-item-radio" type="radio" value="filter-adaptive" name="grid" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-item">
-                <input type="radio" value="filter-fixed" name="grid" id="filter-fixed">
+                <input  class="filter-item-radio" type="radio" value="filter-fixed" name="grid" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-item">
-                <input type="radio" value="filter-elastic" name="grid" id="filter-elastic">
+                <input class="filter-item-radio" type="radio" value="filter-elastic" name="grid" id="filter-elastic">
                 <label for="filter-elastic">Резиновая</label>
               </li>
             </ul>
@@ -74,23 +74,23 @@
             <legend class="selector-title">Особенности:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <input type="checkbox" name="filter-slaider" id="filter-slaider" checked>
+                <input class="filter-item-checkbox" type="checkbox" name="filter-slaider" id="filter-slaider" checked>
                 <label for="filter-slaider">Слайдер</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="filter-advantages" id="filter-advantages">
+                <input class="filter-item-checkbox" type="checkbox" name="filter-advantages" id="filter-advantages">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="filter-news" id="filter-news" checked>
+                <input class="filter-item-checkbox" type="checkbox" name="filter-news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="filter-photo" id="filter-photo">
+                <input class="filter-item-checkbox" type="checkbox" name="filter-photo" id="filter-photo">
                 <label for="filter-photo">Галерея</label>
               </li>
               <li class="filter-item">
-                <input type="checkbox" name="filter-cart" id="filter-cart">
+                <input class="filter-item-checkbox" type="checkbox" name="filter-cart" id="filter-cart">
                 <label for="filter-cart">Корзина</label>
               </li>
             </ul>
@@ -113,10 +113,14 @@
         </ul>
         <ul class="catalog-container-range">
           <li class="container-range-item">
-            <a></a>
+            <a>
+              <img src="img/rage_down.svg" width="11" height="10" alt="">
+            </a>
           </li>
           <li class="container-range-item">
-            <a></a>
+            <a>
+              <img src="img/rage_up.svg" width="11" height="10" alt="">
+            </a>
           </li>
         </ul>
         <h2>Список готовых шаблонов</h2>
@@ -180,7 +184,7 @@
           <li class="pagination-item">
             <a href="#">3</a>
           </li>
-          <li class="pagination-item">\
+          <li class="pagination-item">
             <a class="pagination-nest" href="#">Следующая</a>
           </li>
         </ul>

@@ -17,6 +17,9 @@
   --button-yellow-focus: #E5A722;
   --border-white: #D7DCDE;
   --border-grey: #B4B9BB;
+  --button-grey-hover: #DFDFDF;
+  --button-grey-focus: #D5D5D5;
+  --paginator--grey : #DBDBDB;
 
 }
 
@@ -90,24 +93,6 @@ img {
   color: var(--basic-extra-black);
 }
 
-.learn-more {
-  color: var(--basic-white);
-  background-color: var(--red-button);
-  text-transform: uppercase;
-  vertical-align: middle;
-  text-align: center;
-  font: inherit;
-}
-
-.learn-more:hover {
-  background-color: var(--red-button-hover);
-}
-
-.learn-more:focus {
-  background-color: var(--red-button-focus);
-  opacity: 0.3;
-}
-
 .service-title {
   text-transform: uppercase;
   font-weight: 500;
@@ -116,7 +101,11 @@ img {
   color: var(--basic-extra-black);
 }
 
-.service-link {
+.service-link,
+.catalog-item-link,
+.learn-more,
+.contact-button,
+.post-mail-button {
   text-transform: uppercase;
   vertical-align: middle;
   text-align: center;
@@ -125,16 +114,30 @@ img {
   font-weight: 500;
 }
 
-.button-red {
+.button-red,
+.learn-more,
+.contact-button,
+.catalog-item-link,
+.post-mail-button {
   background-color: var(--red-button);
 }
 
-.button-red:hover {
+.button-red:hover,
+.learn-more:hover,
+.contact-button,
+.contact-button:hover,
+.catalog-item-link:hover,
+.post-mail-button:hover {
   background-color: var(--red-button-hover);
 }
 
-.button-red:focus {
+.button-red:focus,
+.learn-more:focus,
+.contact-button:focus,
+.catalog-item-link:focus,
+.post-mail-button:focus {
   background-color: var(--red-button-focus);
+  opacity: 0.3;
 }
 
 .button-green {
@@ -226,16 +229,6 @@ address {
   color: var(--footer-grey);
 }
 
-.contact-button {
-  text-transform: uppercase;
-  vertical-align: middle;
-  text-align: center;
-  font: inherit;
-  color: var(--basic-white);
-  background-color: var(--red-button);
-  font-weight: 500;
-}
-
 .socials-list {
   list-style: none;
 }
@@ -248,17 +241,116 @@ address {
   background-color: var(--basic-grey);
 }
 
-.selector-title {
+.selector-title,
+.container-header-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-extra-black);
 }
-/*--------------------------------------------------------------------------*/
+
 .filter-list,
-.range-list {
+.range-list,
+.catalog-container-sort,
+.catalog-container-range,
+.catalog-list,
+.pagination-list {
   list-style: none;
+}
+
+.range-item {
+  color: var(--basic-black);
+  font-size: 16px;
+line-height: 22px;
+text-transform: uppercase;
+}
+
+input[type=number] {
+  font: inherit;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: var(--basic-grey) 1px solid;
+  background-color: var(--basic-grey);
+}
+
+.selector-container {
+  border: none;
+  padding: 0;
+}
+
+.filter-item {
+  line-height: 20px;
+}
+
+.filter-item-radio:hover+label,
+.filter-item-checkbox:hover+label {
+  color: var(--basic-black);
+}
+
+.selector-button,
+.pagination-item a {
+  font:inherit;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-extra-black);
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: var(--basic-grey);
+}
+
+.selector-button:hover,
+.pagination-item a:hover {
+  background-color: var(--button-grey-hover);
+}
+
+.selector-button:focus,
+.pagination-item a:focus   {
+  background-color: var(--button-grey-focus);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-item a:active {
+  border: 3px solid var(--paginator--grey);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.container-item {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--basic-extra-black);
+}
+
+.container-item:hover,
+.container-range-item a:hover {
+  opacity: 0.6;
+}
+
+.container-item:focus,
+.container-item:active,
+.container-range-item a:focus,
+.container-range-item a:active {
+  opacity: 0.3;
+}
+
+.catalog-list,
+.catalog-img {
+  padding: 0;
+}
+
+.catalog-item-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-extra-black);
+}
+
+.catalog-item-info {
+  text-align: center;
 }
 
 .footer-title {
@@ -310,13 +402,7 @@ address {
 }
 
 .post-mail-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
   text-align: center;
-  color: var(--basic-white);
   vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--red-button);
   border: none;
 }
