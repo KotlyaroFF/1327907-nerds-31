@@ -25,6 +25,8 @@
 
 .page {
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 body {
@@ -35,9 +37,10 @@ body {
   font-size: 16px;
 }
 
-h2, h1 {
+h2 {
   display: none;
 }
+
 .page-body {
   line-height: 24px;
   font-weight: 400;
@@ -47,10 +50,15 @@ h2, h1 {
   align-content: start;
 }
 
+.page-body h1 {
+  display: none;
+}
+
 .page-catalog {
   font-size: 16px;
   line-height: 18px;
-  color: var(--footer-grey)
+  color: var(--footer-grey);
+  margin-top: 0;
 }
 
 a {
@@ -75,24 +83,14 @@ img {
   font-weight: 500;
 }
 
+
 .index-logo {
-  margin: 51px 0;
+  margin-top: 51px;
 }
 
-.nav-list {
-  display: flex;
-}
-
-.nav-item {
-  margin: 77px 45px;
-}
-
-.account-list {
-  display: flex;
-}
-
+.nav-item,
 .account-item {
-  margin: 77px 45px;
+  margin: 77px 45px 0 45px;
 }
 
 .nav-list-current a:not([href]) {
@@ -101,6 +99,7 @@ img {
 
 .nav-list,
 .account-list {
+  display: flex;
   list-style: none;
   margin: 0 auto;
   padding: 0 10px;
@@ -140,6 +139,7 @@ img {
 
 .slide-block {
   width: 538px;
+  margin-top: 0;
 }
 
 .slide-title {
@@ -161,6 +161,7 @@ img {
 .service-img {
   margin-left: 0;
   margin-top: 0;
+
 }
 
 .service-item {
@@ -257,6 +258,9 @@ img {
 .info {
   display: flex;
   margin-bottom: 73px;
+
+  outline: 5px solid rgba(216, 22, 167, 0.7);
+  outline-offset: -5px;
 }
 
 .info-container-left {
@@ -300,17 +304,18 @@ img {
 .clients-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border:  2px solid var(--basic-grey);
+  border-bottom:  2px solid var(--basic-grey);
+  border-top:  2px solid var(--basic-grey);
   margin-bottom: 80px;
   height: 180px;
   align-items: center;
-
-  outline: 5px solid rgba(170, 148, 22, 0.7);
-  outline-offset: -5px;
 }
 
 .clients-item {
   opacity: 0.2;
+
+  outline: 5px solid rgba(216, 22, 167, 0.7);
+  outline-offset: -5px;
 }
 
 .clients-item:hover {
@@ -321,25 +326,10 @@ img {
   opacity: 0.1;
 }
 
-.contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.contacts {
-  grid-column: 1/2;
-
-  outline: 5px solid rgba(22, 51, 216, 0.7);
-  outline-offset: -5px;
-}
-
 .contact-img {
-  grid-column: 1/-1;
   margin: 0;
   padding: 0;
 
-  outline: 5px solid rgba(22, 51, 216, 0.7);
-  outline-offset: -5px;
 }
 
 .contact-titel {
@@ -360,12 +350,19 @@ address {
   color: var(--footer-grey);
 }
 
+
+
 .catalog-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-extra-black);
   background-color: var(--basic-grey);
+  padding-top: 72px;
+  padding-bottom: 108px;
+  margin-top: 0;
+  margin-bottom: 55px;
+  text-align: center;
 }
 
 .selector-title,
@@ -380,35 +377,19 @@ address {
   display: grid;
   grid-template-columns: 260px 1fr;
 
-  outline: 5px solid rgba(22, 51, 216, 0.7);
-  outline-offset: -5px;
 }
 
-.price-container {
-
-  outline: 5px solid rgba(22, 216, 71, 0.7);
-  outline-offset: -5px;
+.sort-container,
+.catalog-container-sort,
+.catalog-container-range {
+  display: flex;
 }
 
-.catalog-container {
-  display: grid;
-  grid-template-rows: min-content auto min-content;
-  grid-template-columns: 358px 358px;
-
-  outline: 5px solid rgba(216, 22, 167, 0.7);
-  outline-offset: -5px;
-}
-
-.sort-container {
-  grid-column: -1;
-
-  outline: 5px solid rgba(216, 22, 167, 0.7);
-  outline-offset: -5px;
+.container-header-title {
+  display: block;
 }
 
 .pagination-list {
-  grid-row: -1;
-
 
   outline: 5px solid rgba(216, 22, 167, 0.7);
   outline-offset: -5px;
@@ -457,13 +438,20 @@ input[type=number] {
 
 .selector-button,
 .pagination-item a {
-  font:inherit;
-  font-weight: 500;
-  text-align: center;
   color: var(--basic-extra-black);
-  text-transform: uppercase;
   border-radius: 3px;
+  border-color: var(--border-grey);
+  box-shadow: none;
   background-color: var(--basic-grey);
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font: inherit;
+  font-weight: 500;
+  width: 240px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
 }
 
 .selector-button:hover,
@@ -515,7 +503,6 @@ input[type=number] {
 }
 
 .footer {
-  margin-top: 0;
 
   outline: 5px solid rgba(23, 218, 81, 0.7);
   outline-offset: -5px;
@@ -527,7 +514,6 @@ input[type=number] {
   outline: 5px solid rgba(209, 51, 51, 0.7);
   outline-offset: -5px;
 }
-
 .footer-text {
   margin-left: 139px;
   margin-top: 75px  ;
