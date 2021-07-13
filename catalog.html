@@ -15,7 +15,8 @@
 
   <body class="page-catalog">
     <header class="header">
-      <nav class="main-navigation">
+      <div class="container">
+        <nav class="main-navigation">
         <a class="index-logo" href="index.html">
           <img src="img/logo.svg" width="160" height="65" alt="">
         </a>
@@ -27,15 +28,16 @@
         </ul>
         <ul class="account-list">
           <li class="account-item">
-            <img src="img/account_basket.svg">
-            <a href="#">Корзина</a>
+            <a href="#"><img class="account-basket" src="img/account_basket.svg">Корзина</a>
           </li>
         </ul>
-      </nav>
+        </nav>
+      </div>
     </header>
   <main class="content">
-    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-    <section class="main-container">
+    <div class="container">
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      <section class="main-container">
       <div class="price-container">
         <h2>Фильтр товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -134,7 +136,7 @@
             <div class="catalog-itam-container">
               <a href="#" class="catalog-item-name">Sedona</a>
               <p class="catalog-item-info">Информационный сайт для туристов</p>
-              <a class="catalog-item-link" href="#"><span class="sedona-price">9900p</span></a>
+              <a class="catalog-item-link" href="#">9900p</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -144,7 +146,7 @@
             <div class="catalog-itam-container">
               <a href="#"  class="catalog-item-name">Pink APP</a>
               <p class="catalog-item-info">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="catalog-item-link" href="#"><span class="pink-price">9900p</span></a>
+              <a class="catalog-item-link" href="#">9900p</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -154,7 +156,7 @@
             <div class="catalog-itam-container">
               <a href="#" class="catalog-item-name">Barbershop</a>
               <p class="catalog-item-info">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="catalog-item-link" href="#"><span class="barbershop-price">9900p</span></a>
+              <a class="catalog-item-link" href="#">9900p</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -164,7 +166,7 @@
             <div class="catalog-itam-container">
               <a href="#" class="catalog-item-name">MISHKA</a>
               <p class="catalog-item-info">Интернет-магазин вязаных игрушек</p>
-              <a class="catalog-item-link" href="#"><span class="mishka-price">9900p</span></a>
+              <a class="catalog-item-link" href="#">9900p</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -174,7 +176,7 @@
             <div class="catalog-itam-container">
               <a href="#" class="catalog-item-name">A Plus</a>
               <p class="catalog-item-info">Лендинг курсов повышения квалификации</p>
-              <a class="catalog-item-link" href="#"><span class="a-plus-price">9900p</span></a>
+              <a class="catalog-item-link" href="#">9900p</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -184,7 +186,7 @@
             <div class="catalog-itam-container">
               <a href="#" class="catalog-item-name">КВАСТ</a>
               <p class="catalog-item-info">Промо-сайт производителякрафтового кваса</p>
-              <a class="catalog-item-link" href="#"><span class="sedona-kbact">9900p</span></a>
+              <a class="catalog-item-link" href="#">9900p</a>
             </div>
           </li>
         </ul>
@@ -203,11 +205,13 @@
           </li>
         </ul>
       </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="footer">
-    <h2>Контакты</h2>
-    <div class="contact-container">
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contact-container">
       <figure class="contact-img">
         <img src="img/map.jpg" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
       </figure>
@@ -217,9 +221,11 @@
         <a href="tel:+78005558628" class="contact-tel">+7 800 555-86-28</a>
         <a href="#" class="contact-button">Напишите нам</a>
       </aside>
+      </div>
     </div>
     <section class="footer-container">
-      <div class="socials">
+      <div class="container">
+        <div class="socials">
       <h2>Соц.сети</h2>
       <ul class="socials-list">
         <li class="socials-item">
@@ -238,12 +244,14 @@
           </a>
         </li>
       </ul>
-      </div>
-      <div class="footer-text">
+         </div>
+        <div class="footer-text">
         <p class="footer-title">Давайте дружить, это выгодно!</p>
         <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </section>
+    </div>
   </footer>
 
   <section>

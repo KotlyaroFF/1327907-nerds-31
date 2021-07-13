@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  <link href="normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
   <link href="css/style1.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
@@ -14,198 +15,214 @@
 
 <body class="page-body">
   <header class="header">
-    <nav class="main-navigation">
-      <a class="index-logo">
-        <img src="img/logo.svg" width="160" height="65" alt="">
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#">Студия</a></li>
-        <li class="nav-item"><a href="#">Клиенты</a></li>
-        <li class="nav-item"><a href="catalog.html">Магазин</a></li>
-        <li class="nav-item"><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="account-list">
-        <li class="account-item">
-          <img src="img/account_basket.svg">
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <section class="slider">
-      <div class="slider-container">
-      <h2>Слайдер</h2>
-      <div class="slide-item">
-      <div class="slide-block">
-        <p class="slide-title">Долго, дорого, скрупулезно.</p>
-        <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="#" class="learn-more">Узнать больше</a>
-      </div>
-      <figure class="slide-img">
-        <img src="img/index_slide_1.png" width="760" height="431" alt="Дизайн для смартфонов">
-      </figure>
-     </div>
-      <div class="slide-item">
-      <div class="slide-block">
-        <p class="slide-title">Любим математику как никто другой</p>
-        <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-        <a href="#" class="learn-more">Узнать больше</a>
-      </div>
-      <figure class="slide-img">
-        <img src="img/index_slide_2.png" width="760" height="431" alt="Дизайн для пк">
-      </figure>
-      </div>
-      <div class="slide-item">
-      <div class="slide-block">
-        <p class="slide-title">Только ночь, только хардкор</p>
-        <p class="slide-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a href="#" class="learn-more">Узнать больше</a>
-      </div>
-      <figure class="slide-img">
-        <img src="img/index_slide_3.png" width="760" height="431" alt="Адаптивная верстка">
-      </figure>
-      </div>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="index-logo" href="index.html">
+          <img src="img/logo.svg" width="160" height="65" alt="">
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Студия</a></li>
+          <li class="nav-item"><a href="#">Клиенты</a></li>
+          <li class="nav-item"><a href="catalog.html">Магазин</a></li>
+          <li class="nav-item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="account-list">
+          <li class="account-item">
+            <a href="#"><img class="account-basket" src="img/account_basket.svg">Корзина</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
   <main class="content">
     <h1>Студия Веб дизайна "Нёрдс"</h1>
-    <section>
-      <h2>Услуги</h2>
-      <ul class="services">
-        <li class="service-item">
-          <figure class="service-img">
-            <img src="img/service_wed_suite.jpg" width="300" height="146" alt="">
-          </figure>
-          <div class="service-container">
-            <h3 class="service-title">Веб-сайты</h3>
-            <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="service-link button-red">Заказать</a>
+    <section class="slider">
+      <div class="container">
+        <h2>Слайдер</h2>
+        <div class="slide-item">
+          <div class="slide-block">
+            <p class="slide-title">Долго, дорого, скрупулезно.</p>
+            <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="learn-more">Узнать больше</a>
           </div>
-        </li>
-        <li class="service-item">
-          <figure class="service-img">
-            <img src="img/service_on_smartphone.jpg" width="300" height="146" alt="">
+          <figure class="slide-img-container">
+            <img class="slide-img" src="img/index_slide_1.png" width="760" height="431" alt="Дизайн для смартфонов">
           </figure>
-          <div class="service-container">
-            <h3 class="service-title">Приложения</h3>
-            <p class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="service-link button-green">Заказать</a>
+        </div>
+        <div class="unvisibility">
+          <div class="slide-item">
+            <div class="slide-block">
+              <p class="slide-title">Любим математику как никто другой</p>
+              <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+              <a href="#" class="learn-more">Узнать больше</a>
+            </div>
+            <figure class="slide-img-container">
+              <img class="slide-img" src="img/index_slide_2.png" width="760" height="431" alt="Дизайн для пк">
+            </figure>
           </div>
-        </li>
-        <li class="service-item">
-          <figure class="service-img">
-            <img src="img/service_presentation.jpg" width="300" height="146" alt="">
-          </figure>
-          <div class="service-container">
-            <h3 class="service-title">Призентации</h3>
-            <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="service-link button-yellow">Заказать</a>
+          <div class="slide-item">
+            <div class="slide-block">
+              <p class="slide-title">Только ночь, только хардкор</p>
+              <p class="slide-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+              </p>
+              <a href="#" class="learn-more">Узнать больше</a>
+            </div>
+            <figure class="slide-img-container">
+              <img class="slide-img" src="img/index_slide_3.png" width="760" height="431" alt="Адаптивная верстка">
+            </figure>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
-    <section class="info">
-      <h2>О компании</h2>
-      <div class="info-container-left">
-        <p class="info-title">Мы — маленькая, но гордая
-          дизайн-студия из Краснодара.</p>
-        <P class="info-text">Исповедуем принципы минимализма и чистоты.
-          Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.
-        </P>
-        <p class="info-subtitel-left">Выполняем заказы на разработку:</p>
-        <ul class="info-list">
-          <li class="info-item">Веб-сайтов любой сложности</li>
-          <li class="info-item">Мобильных приложений для iOS и Android</li>
-          <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
+    <section>
+      <div class="container">
+        <h2>Услуги</h2>
+        <ul class="services">
+          <li class="service-item">
+            <figure class="service-img-container">
+              <img class="service-img" src="img/service_wed_suite.jpg" width="300" height="146" alt="">
+            </figure>
+            <div class="service-container">
+              <h3 class="service-title">Веб-сайты</h3>
+              <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a href="#" class="service-link button-red">Заказать</a>
+            </div>
+          </li>
+          <li class="service-item">
+            <figure class="service-img-container">
+              <img class="service-img" src="img/service_on_smartphone.jpg" width="300" height="146" alt="">
+            </figure>
+            <div class="service-container">
+              <h3 class="service-title">Приложения</h3>
+              <p class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a href="#" class="service-link button-green">Заказать</a>
+            </div>
+          </li>
+          <li class="service-item">
+            <figure class="service-img-container">
+              <img class="service-img" src="img/service_presentation.jpg" width="300" height="146" alt="">
+            </figure>
+            <div class="service-container">
+              <h3 class="service-title">Призентации</h3>
+              <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a href="#" class="service-link button-yellow">Заказать</a>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="info-container-right">
-        <figure class="info-logo">
-          <img src="img/logo_color.png" width="360" height="208" alt="">
-        </figure>
-        <table class="info-table">
-          <caption class="info-subtitle-right">с 2004 года Любим точность во всем:</caption>
-          <tr class="info-row">
-            <th class="info-col">146%</th>
-            <th class="info-col">100%</th>
-            <th class="info-col">50%</th>
-          </tr>
-          <tr class="info-row">
-            <td class="info-text">Уровень самоотдачи</td>
-            <td class="info-text">Соблюдение сроков</td>
-            <td class="info-text">Минимальная предоплата</td>
-          </tr>
-        </table>
+    </section>
+    <section class="info">
+      <div class="container">
+        <h2>О компании</h2>
+        <div class="info-container-left">
+          <p class="info-title">Мы — маленькая, но гордая
+            дизайн-студия из Краснодара.
+          </p>
+          <p class="info-text">Исповедуем принципы минимализма и чистоты.
+            Ставим математический расчет
+            превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <p class="info-subtitel-left">Выполняем заказы на разработку:</p>
+          <ul class="info-list">
+            <li class="info-item">Веб-сайтов любой сложности</li>
+            <li class="info-item">Мобильных приложений для iOS и Android</li>
+            <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="info-container-right">
+          <figure class="info-logo-container">
+            <img class="info-logo" src="img/logo_color.png" width="360" height="208" alt="">
+          </figure>
+          <table class="info-table">
+            <caption class="info-subtitle-right">с 2004 года Любим точность во всем:</caption>
+            <tr class="info-row">
+              <th class="info-col">146<span>%</span></th>
+              <th class="info-col">100<span>%</span></th>
+              <th class="info-col">50<span>%</span></th>
+            </tr>
+            <tr class="info-row">
+              <td class="info-text">Уровень самоотдачи</td>
+              <td class="info-text">Соблюдение сроков</td>
+              <td class="info-text">Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
     <section class="clients">
-      <h2>Клиенты</h2>
-      <ul class="clients-list">
-        <li class="clients-item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="clients-link">
-            <img src="img/html_acadeny_logo.svg" width="199" height="57" alt="HtmlAcademy">
-          </a>
-        </li>
-        <li class="clients-item">
-          <a class="clients-link">
-            <img src="img/borodinski.png" width="209" height="90" alt="Барбершоп Бородинский">
-          </a>
-        </li>
-        <li class="clients-item">
-          <a class="clients-link">
-            <img src="img/pink.png" width="185" height="52" alt="Студия Pink">
-          </a>
-        </li>
-        <li class="clients-item">
-          <a class="clients-link">
-            <img src="img/mishka.png" width="173" height="84" alt="Сервис Mishka">
-          </a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2>Клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-item">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="clients-link">
+              <img src="img/html_acadeny_logo.svg" width="199" height="57" alt="HtmlAcademy">
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link">
+              <img src="img/borodinski.png" width="209" height="90" alt="Барбершоп Бородинский">
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link">
+              <img src="img/pink.png" width="185" height="52" alt="Студия Pink">
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-link">
+              <img src="img/mishka.png" width="173" height="84" alt="Сервис Mishka">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <h2>Контакты</h2>
-    <div class="contact-container">
-      <figure class="contact-img">
-        <img src="img/map.jpg" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-      </figure>
-      <aside class="contacts">
-        <p class="contact-titel">NЁRDS DESIGN STUDIO</p>
-        <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <a href="tel:+78005558628" class="contact-tel">+7 800 555-86-28</a>
-        <a href="#" class="contact-button">Напишите нам</a>
-      </aside>
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contact-container">
+        <figure class="contact-img">
+          <img src="img/map.jpg" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+        </figure>
+        <aside class="contacts">
+          <p class="contact-titel">NЁRDS DESIGN STUDIO</p>
+          <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+          <a href="tel:+78005558628" class="contact-tel">+7 800 555-86-28</a>
+          <a href="#" class="contact-button">Напишите нам</a>
+        </aside>
+      </div>
     </div>
     <section class="footer-container">
-      <div class="socials">
-      <h2>Соц.сети</h2>
-      <ul class="socials-list">
-        <li class="socials-item">
-          <a class="socials-link">
-            <img src="img/vk_icon.svg" width="26" height="15" alt="vk">
-          </a>
-        </li>
-        <li class="socials-item">
-          <a class="socials-link">
-            <img src="img/facebook_icon.svg" width="12" height="22" alt="facebook">
-          </a>
-        </li>
-        <li class="socials-item">
-          <a class="socials-link">
-            <img src="img/insta_icon.svg" width="21" height="21" alt="instagram">
-          </a>
-        </li>
-      </ul>
-      </div>
-      <div class="footer-text">
-        <p class="footer-title">Давайте дружить, это выгодно!</p>
-        <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container">
+        <div class="socials">
+          <h2>Соц.сети</h2>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link">
+                <img src="img/vk_icon.svg" width="26" height="15" alt="vk">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link">
+                <img src="img/facebook_icon.svg" width="12" height="22" alt="facebook">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link">
+                <img src="img/insta_icon.svg" width="21" height="21" alt="instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <p class="footer-title">Давайте дружить, это выгодно!</p>
+          <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </section>
+    </div>
   </footer>
-<!--
+  <!--
   <section class="feedback-section">
     <h2>Обратная связь</h2>
     <p class="feedback">Напишите нам</p>
