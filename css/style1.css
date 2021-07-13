@@ -423,6 +423,9 @@ span {
 
 .clients-item {
   opacity: 0.2;
+
+  outline: 5px solid rgba(216, 70, 13, 0.7);
+  outline-offset: -5px;
 }
 
 .clients-item:hover {
