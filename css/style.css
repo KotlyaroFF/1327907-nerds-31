@@ -490,6 +490,8 @@ span {
 }
 
 .catalog-container {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content ;
   margin-left: 141px;
 
   outline: 5px solid rgba(63, 211, 216, 0.7);
@@ -543,31 +545,25 @@ text-transform: uppercase;
 
 .pagination-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 443px;
   height: 50px;
   padding: 0;
 }
 
 .pagination-item {
-  display: flex;
-  flex-grow: 1;
-  margin: 11px;
-  height: 50px;
+  flex-grow: 2;
+  margin-right: 11px;
+}
 
-
-  outline: 5px solid rgba(63, 211, 216, 0.7);
-  outline-offset: -5px;
+.pagination-item:last-child {
+  flex-grow: 6;
 }
 
 .pagination-item a {
-  display: flex;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-
-  outline: 5px solid rgba(63, 216, 83, 0.7);
-  outline-offset: -5px;
+  display: block;
+  text-align: center;
+  padding: 17px 0 15px 0;
 }
 
 .filter-list,
@@ -801,10 +797,6 @@ address {
   margin-left: 139px;
 }
 
-.feedback-section {
-  box-shadow: 0px 20px 40px;
-}
-
 .socials-list {
   display: flex;
   justify-content: space-between;
@@ -831,16 +823,58 @@ address {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.feedback-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  height: 590px;
+  margin: 0 auto;
+  box-shadow: 0px 20px 40px;
+
+  outline: 5px solid rgba(15, 22, 22, 0.7);
+  outline-offset: -5px;
+}
+
 .feedback {
+  display: flex;
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
   color: var(--basic-extra-black);
+  width: 770px;
+  height: 53px;ы
+  margin: 63px 90px 37px 100px;
+
+  justify-content: space-between;
+}
+
+.feedback p {
+  margin: 0;
+}
+
+.feedback-closed {
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  height: 21px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 99px 84px 100px;
+}
+
+.feedback-form-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .feedback-lable {
   font-weight: 700;
   color: var(--basic-extra-black);
+  margin-bottom: 9px;
 }
 
 .feedback-text {
@@ -849,6 +883,13 @@ address {
   background-color: transparent;
   font: inherit;
   line-height: 18px;
+  width: 360px;
+  height: 50px;
+}
+
+.text-mail {
+  width: 760px;
+  height: 118px;
 }
 
 .feedback-text:hover {
