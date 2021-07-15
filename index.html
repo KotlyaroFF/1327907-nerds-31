@@ -181,16 +181,20 @@
 
   <footer class="footer">
     <h2>Контакты</h2>
-    <figure class="contact-img">
-      <img src="img/map.jpg" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-    </figure>
-    <div class="container">
+    <div class="footer-grid-container">
+      <figure class="contact-img">
+        <img src="img/map.jpg" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+      </figure>
       <aside class="contacts">
-        <p class="contact-titel">NЁRDS DESIGN STUDIO</p>
-        <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <a href="tel:+78005558628" class="contact-tel">+7 800 555-86-28</a>
-        <a href="#" class="contact-button">Напишите нам</a>
+        <div class="contacts-container">
+          <p class="contact-titel">NЁRDS DESIGN STUDIO</p>
+          <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+          <a href="tel:+78005558628" class="contact-tel">+7 800 555-86-28</a>
+          <a href="#" class="contact-button">Напишите нам</a>
+        </div>
       </aside>
+    </div>
+    <div class="container">
       <section class="footer-container">
         <div class="container">
           <div class="socials">
@@ -219,34 +223,36 @@
           </div>
         </div>
       </section>
+    </div>
   </footer>
 
   <!-- <div class="unvisibility">-->
-    <section class="feedback-section">
-      <h2>Обратная связь</h2>
-      <div class="feedback">
-        <p>Напишите нам</p>
-        <button class="feedback-closed" type="submit">
-          <img src="img/feedback_closed.svg" alt="closed" width="21px" height="21px">
-        </button>
+  <section class="feedback-section">
+    <h2>Обратная связь</h2>
+    <div class="feedback">
+      <p>Напишите нам</p>
+      <button class="feedback-closed" type="submit">
+        <img src="img/feedback_closed.svg" alt="closed" width="21px" height="21px">
+      </button>
+    </div>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback-form-container">
+        <label class="feedback-lable" for="username">Ваше имя:</label>
+        <input class="feedback-text" type="text" id="username" name="username" placeholder="Имя Фамилия">
       </div>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback-form-container">
-          <label class="feedback-lable" for="username">Ваше имя:</label>
-          <input class="feedback-text" type="text" id="username" name="username" placeholder="Имя Фамилия">
-        </div>
-        <div class="feedback-form-container">
-          <label class="feedback-lable" for="useremail">Ваш email:</label>
-          <input class="feedback-text" type="email" id="useremail" name="useremail" placeholder="email@example.com ">
-        </div>
-        <div class="feedback-form-container">
-          <label class="feedback-lable" for="textmail">Текст письма:</label>
-          <input class="feedback-text text-mail" type="text" id="textmail" name="textmail" placeholder="В свободной форме">
-        </div>
-          <button type="submit" class="post-mail-button">Отправить</button>
-      </form>
-    </section>
-    <!--</div>-->
+      <div class="feedback-form-container">
+        <label class="feedback-lable" for="useremail">Ваш email:</label>
+        <input class="feedback-text" type="email" id="useremail" name="useremail" placeholder="email@example.com ">
+      </div>
+      <div class="feedback-form-container">
+        <label class="feedback-lable" for="textmail">Текст письма:</label>
+        <input class="feedback-text text-mail" type="text" id="textmail" name="textmail"
+          placeholder="В свободной форме">
+      </div>
+      <button type="submit" class="post-mail-button">Отправить</button>
+    </form>
+  </section>
+  <!--</div>-->
 </body>
 
 </html>
