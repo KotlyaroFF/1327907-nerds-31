@@ -234,7 +234,6 @@ img {
 
 .service-text {
   width: 260px;
-
 }
 
 /* Кнопки - Ссылки*/
@@ -376,7 +375,6 @@ img {
 .info-logo-container {
   margin: 0 0 37px;
   padding: 0;
-
 }
 
 .info-logo {
@@ -648,7 +646,6 @@ input[type=number] {
   flex-wrap: wrap;
   text-align: center;
   width: 358px;
-
 }
 
 .catalog-img {
@@ -689,7 +686,6 @@ input[type=number] {
 
 .catalog-item-link {
   margin-bottom: 44px;
-
 }
 
 /* Футер*/
