@@ -720,17 +720,12 @@ input[type=number] {
   flex-wrap: wrap;
 }
 
-.footer-grid-container {
-  display: grid;
-  grid-template-columns: 100% 1fr;
-  grid-template-rows: 100% 1fr;
+
+.map-container {
   width: 100%;
 }
 
 .contact-img {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  z-index: 1;
   width: 100%;
   margin: 0;
 }
@@ -738,16 +733,13 @@ input[type=number] {
 .contact-img img {
   display: block;
   width: 100%;
-
   margin: 0;
 }
 
 .contacts {
-  margin: 54px auto;
+  margin: 0 auto;
   width: 1160px;
-  grid-column: 1/3;
-  grid-row: 1/2;
-  z-index: 2;
+  position: relative;
 
   outline: 5px solid rgba(10, 9, 9, 0.7);
   outline-offset: -5px;
@@ -761,9 +753,8 @@ input[type=number] {
   width: 308px;
   margin: 0;
   background-color: var(--basic-white);
-
-
-
+  position: absolute;
+  top: -362px;
 }
 
 .contact-titel {
