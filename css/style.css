@@ -72,9 +72,6 @@ img {
 .container {
   width: 1160px;
   margin: 0 auto;
-
-  outline: 5px solid rgba(10, 9, 9, 0.7);
-  outline-offset: -5px;
 }
 
 /* Хедер*/
@@ -167,9 +164,6 @@ img {
   display: grid;
   margin-bottom: 80px;
   margin-top: 0;
-
-  outline: 5px solid rgba(216, 70, 13, 0.7);
-  outline-offset: -5px;
 }
 
 .slide-item {
@@ -187,25 +181,16 @@ img {
   font-weight: 500;
   color: var(--basic-extra-black);
   margin-bottom: 25px;
-
-  outline: 5px solid rgba(216, 70, 13, 0.7);
-  outline-offset: -5px;
 }
 
 .slide-text {
   width: 400px;
   margin: 0 0 38px 0;
-
-  outline: 5px solid rgba(216, 70, 13, 0.7);
-  outline-offset: -5px;
 }
 
 .slide-img-container {
   margin: 0;
   padding: 0;
-
-  outline: 5px solid rgba(216, 70, 13, 0.7);
-  outline-offset: -5px;
 }
 
 .slide-img {
@@ -450,9 +435,6 @@ span {
 
 .clients-item {
   opacity: 0.2;
-
-  outline: 5px solid rgba(216, 70, 13, 0.7);
-  outline-offset: -5px;
 }
 
 .clients-item:hover {
@@ -496,9 +478,6 @@ span {
   display: grid;
   grid-template-rows: min-content 1fr min-content ;
   margin-left: 141px;
-
-  outline: 5px solid rgba(63, 211, 216, 0.7);
-  outline-offset: -5px;
 }
 
 .sort-container {
@@ -723,26 +702,27 @@ input[type=number] {
 
 .map-container {
   width: 100%;
+  height: 146px;
+  position:  ;
 }
 
 .contact-img {
   width: 100%;
   margin: 0;
+  height: 100%;
 }
 
 .contact-img img {
   display: block;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .contacts {
   margin: 0 auto;
   width: 1160px;
   position: relative;
-
-  outline: 5px solid rgba(10, 9, 9, 0.7);
-  outline-offset: -5px;
 }
 
 .contacts-container {
@@ -851,9 +831,6 @@ address {
   height: 590px;
   margin: 0 auto;
   box-shadow: 0px 20px 40px;
-
-  outline: 5px solid rgba(15, 22, 22, 0.7);
-  outline-offset: -5px;
 }
 
 .feedback {
@@ -865,7 +842,6 @@ address {
   width: 770px;
   height: 53px;
   margin: 63px 90px 37px 100px;
-
   justify-content: space-between;
 }
 
